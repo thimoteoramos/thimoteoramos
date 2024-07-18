@@ -1,0 +1,22 @@
+#nome_thi{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #B4BEC9;
+}
+
+strong{
+    font-style: italic;
+}
+.Inicio{
+    font-size: 20px;
+}
+
+.Sobre_mim{
+    font-size: 20px;
+}
+
+.Skill{
+    font-size: 20px;
+}
