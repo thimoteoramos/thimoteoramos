@@ -62,6 +62,9 @@ ul.skills li {
     font-size: 18px;
 }
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
     padding: 10px;
     background-color: #002333;
@@ -71,7 +74,7 @@ footer {
     bottom: 0;
 }
 a {
-    color: #e2f1f8;
+    color: white;
     text-decoration: none;
 }
 a:hover {
