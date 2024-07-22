@@ -5,73 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thimoteo Ramos</title>
     <style>
-        #nome_thi{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-body{
-    background-color: #B4BEC9;
-}
-
-strong{
-    font-style: italic;
-}
-.Inicio{
-    font-size: 20px;
-}
-
-.Sobre_mim{
-    font-size: 20px;
-}
-
-.Skill{
-    font-size: 20px;
-}
-container {
-  display: flex;
-  background-color: DodgerBlue;
-}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #B4BEC9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #002333;
+            color: white;
+            padding: 10px 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #DEEFE7;
+        }
+        .profile-pic {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+        }
+        h2 {
+            font-size: 22px;
+            color: #002333;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+        ul.skills {
+            list-style: none;
+            padding: 0;
+        }
+        ul.skills li {
+            background-color: #159A9C;
+            color: white;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #002333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        a {
+            color: #002333;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
-   <!-- <link rel="stylesheet" href="mystyle.css">-->
-    <!-- Paleta de cores | 4BEC9,  #159A9C,    #002333,    #DEEFE7,    #FFFFFF"""-->
 </head>
 <body>
     <header>
-     <div class="flex-container">
-        <div><h1 id="nome_thi">Thimoteo Ramos</h1> </div>
-        <div><ul>
-        <li>LinkedID</li>
-        <li>MeetUp</li>
-        <li>GitHub</li>
-        <li>Projetos</li>
-        </ul></div>
-    </div>
+        <h1 id="nome_thi">Thimoteo Ramos</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/thimoteo-ramos">LinkedIn</a></li>
+                <li><a href="https://www.meetup.com/members/thimoteo-ramos">MeetUp</a></li>
+                <li><a href="https://github.com/thimoteo-ramos">GitHub</a></li>
+                <li><a href="#projects">Projetos</a></li>
+            </ul>
+        </nav>
     </header>
-    <img id="Foto" src="foto.png" width="150px" alt="Thimoteo em uma Foto 3x4">
-    <h2 id="Sobre">Sobre Mim</h2>
-    <p>Eu sou o <strong>Thimoteo Ramos</strong> nascido em <strong>Pernambuco</strong> , moro em São Paulo, a 13 anos.
-        Atualmente sou Analista de Negócio em uma excelente empresa de Telecom, mas nós últimos meses tenho me dedicado
-        nos estudos para me tornar um desenvolver Full Stack, començando pelo bom e velho FrontEnd.</p>
-    <h2 id="Skills">Skills</h2>
-    <ul>
-        <li>Inglês Advanced</li>
-        <li>Power BI</li>
-        <li>Microsoft SQL Server</li>
-        <li>Network Fundaments</li>
-        <li>Power Apps</li>
-        <li>Linux/Unix</li>
-        <li>AWS</li>
-        <li>Protocols TCP/IP SMPP SIP UDP</li>
-    </ul>
-<a href="#Foto">Minha Foto</a>
-<a href="https://devocionaldiario.com.br/" target="_blank">Meu Blog Favorito</a>
-<br>
-<br>
-<br>
-<ul>
-    <il class="Inicio"><a href="#Foto">Inicio</a></il>
-    <il class="Sobre_mim"><a href="#Sobre">Sobre Mim</a></il>
-    <il class="Skill"><a href="#Skills">Skill</a></il>
-</ul>
+    <div class="container">
+        <img id="Foto" class="profile-pic" src="foto.png" width="150px" alt="Thimoteo em uma Foto 3x4">
+        <h2 id="Sobre">Sobre Mim</h2>
+        <p>Eu sou o <strong>Thimoteo Ramos</strong> nascido em <strong>Pernambuco</strong>, moro em São Paulo há 13 anos. Atualmente sou Analista de Negócio em uma excelente empresa de Telecom, mas nos últimos meses tenho me dedicado aos estudos para me tornar um desenvolvedor Full Stack, começando pelo bom e velho FrontEnd.</p>
+        <h2 id="Skills">Skills</h2>
+        <ul class="skills">
+            <li>Inglês Advanced</li>
+            <li>Power BI</li>
+            <li>Microsoft SQL Server</li>
+            <li>Network Fundaments</li>
+            <li>Power Apps</li>
+            <li>Linux/Unix</li>
+            <li>AWS</li>
+            <li>Protocols TCP/IP SMPP SIP UDP</li>
+        </ul>
+        <a href="#Foto">Minha Foto</a><br>
+        <a href="https://devocionaldiario.com.br/" target="_blank">Meu Blog Favorito</a>
+    </div>
+    <footer>
+        <ul>
+            <li class="Inicio"><a href="#Foto">Inicio</a></li>
+            <li class="Sobre_mim"><a href="#Sobre">Sobre Mim</a></li>
+            <li class="Skill"><a href="#Skills">Skill</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
